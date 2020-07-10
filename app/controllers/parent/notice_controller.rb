@@ -1,4 +1,4 @@
-class Parent::NoticeController < Admin::Base
+class Parent::NoticeController < Parent::Base
   def new
   end
 end
