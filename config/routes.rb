@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+
   namespace :parent do
+    root to: 'top#top'
+    get 'notice/new'
     devise_for :parents,controllers: {
       sessions: 'parent/parents/sessions',
       registrations: 'parent/parents/registrations',
       passwords: 'parent/parents/passwords'
     }
-    get 'notice/new'
   end
 
   namespace :admin do
